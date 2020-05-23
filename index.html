@@ -26,24 +26,32 @@
         <hr class="my-4">
         <div class="row">
             <div class="col-3">
-              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link active" id="v-pills-import-tab" data-toggle="pill" href="#v-pills-import" role="tab">1. Import</a>
-                <a class="nav-link" id="v-pills-edit-tab" data-toggle="pill" href="#v-pills-edit" role="tab">2. Edit</a>
-                <a class="nav-link" id="v-pills-export-tab" data-toggle="pill" href="#v-pills-export" role="tab">3. Export</a>
+              <div class="nav flex-column nav-pills" aria-orientation="vertical">
+                <a class="nav-link">1. Import</a>
               </div>
             </div>
             <div class="col-9">
-              <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-import" role="tabpanel">
-                    <textarea class="form-control" id="txtImport" rows="10"></textarea>
-                </div>
-                <div class="tab-pane fade" id="v-pills-edit" role="tabpanel">
-                    <textarea class="form-control" disabled id="txtEdit" rows="10"></textarea>
-                </div>
-                <div class="tab-pane fade" id="v-pills-export" role="tabpanel">
-                    <textarea class="form-control" disabled id="txtExport" rows="10"></textarea>
-                </div>
+                <textarea class="form-control" id="txtImport" rows="2"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+              <div class="nav flex-column nav-pills" aria-orientation="vertical">
+                <a class="nav-link">2. Edit</a>
               </div>
+            </div>
+            <div class="col-9">
+                <textarea class="form-control" disabled id="txtEdit" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+              <div class="nav flex-column nav-pills" aria-orientation="vertical">
+                <a class="nav-link">3. Export</a>
+              </div>
+            </div>
+            <div class="col-9">
+                <textarea class="form-control" disabled id="txtExport" rows="2"></textarea>
             </div>
         </div>
     </div>

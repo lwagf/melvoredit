@@ -3,7 +3,7 @@ $(function() {
     const $edit = $('#txtEdit');
     const $export = $('#txtExport');
 
-    $import.on('input', (e) => {
+    $import.on('blur', (e) => {
         try {
             const jsonSave = JSON.parse(pako.ungzip(atob($import.val()), { to: 'string' }));
             $edit.val(JSON.stringify(jsonSave, null, 2));
@@ -17,7 +17,7 @@ $(function() {
         }
     });
 
-    $edit.on('input', (e) => {
+    $edit.on('blur', (e) => {
         try {
             const jsonSave = $edit.val();
             JSON.parse(jsonSave);

@@ -3,3 +3,7 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
+.jumbotron .row {
+    margin-bottom: 20px;
+}
