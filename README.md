@@ -1,37 +1,11 @@
-## Welcome to GitHub Pages
+## Melvoredit
+Import and export save data for http://melvoridle.com/
 
-You can use the [editor on GitHub](https://github.com/lwagf/melvoredit/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## How do I use this?
+Using the Melvor Idle sidebar, click on Settings, scroll down and click 'Import / Export Save' and copy your exported save
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Paste this into the first textbox (1. Import)
 
-### Markdown
+If valid, the second textbox (2. Edit) should now be editable and have a human-readable version of your save
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/lwagf/melvoredit/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Simply change your save in this textbox, the third textbox (3. Export) will automatically update with your new copiable save if still valid
