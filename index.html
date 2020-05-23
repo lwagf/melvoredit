@@ -1,0 +1,51 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Import and export save data for melvoridle">
+    <meta name="author" content="lwagf">
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>melvoredit</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="pako.min.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body class="text-center">
+    <div class="jumbotron">
+        <h1 class="display-4">Melvoredit</h1>
+        <p class="lead">Import and export save data for <a href="http://melvoridle.com/" target="_blank">http://melvoridle.com/</a></p>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-3">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-import-tab" data-toggle="pill" href="#v-pills-import" role="tab">1. Import</a>
+                <a class="nav-link" id="v-pills-edit-tab" data-toggle="pill" href="#v-pills-edit" role="tab">2. Edit</a>
+                <a class="nav-link" id="v-pills-export-tab" data-toggle="pill" href="#v-pills-export" role="tab">3. Export</a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-import" role="tabpanel">
+                    <textarea class="form-control" id="txtImport" rows="10"></textarea>
+                </div>
+                <div class="tab-pane fade" id="v-pills-edit" role="tabpanel">
+                    <textarea class="form-control" disabled id="txtEdit" rows="10"></textarea>
+                </div>
+                <div class="tab-pane fade" id="v-pills-export" role="tabpanel">
+                    <textarea class="form-control" disabled id="txtExport" rows="10"></textarea>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+</html>
