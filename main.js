@@ -1,9 +1,9 @@
-$(function() {
+$(() => {
     const $import = $('#txtImport');
     const $edit = $('#txtEdit');
     const $export = $('#txtExport');
 
-    $import.on('blur', (e) => {
+    $import.on('blur', () => {
         try {
             const jsonSave = JSON.parse(pako.ungzip(atob($import.val()), { to: 'string' }));
             $edit.val(JSON.stringify(jsonSave, null, 2));
@@ -17,7 +17,7 @@ $(function() {
         }
     });
 
-    $edit.on('blur', (e) => {
+    $edit.on('blur', () => {
         try {
             const jsonSave = $edit.val();
             JSON.parse(jsonSave);
